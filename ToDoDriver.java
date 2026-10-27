@@ -26,6 +26,8 @@ public class ToDoDriver
             newItem = caseScanner.nextLine();
             ToDo.addItem(newItem);
 
+            //TODO rest of cases
+
         }
 
     }

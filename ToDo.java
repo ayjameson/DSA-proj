@@ -52,4 +52,6 @@ public class ToDo
             System.out.println("To-Do list is empty");
         }
     }
+
+    //TODO peek method, toString method
 }
