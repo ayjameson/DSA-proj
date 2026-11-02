@@ -5,30 +5,34 @@ public class ToDoDriver
 {
     public static void main(String[] args)
     {
-        ToDo[] ToDo = new ToDo[10];
+        ToDo List = new ToDo();
         int choice;
         String newItem;
+        choice = 0;
 
-        Scanner choicesScanner = new Scanner(System.in);
-        System.out.println("What would you like to do? ");
-        System.out.println("1. Enter a new To-Do item ");
-        System.out.println("2. Check off To-Do item ");
-        System.out.println("3. See next To-Do item ");
-        System.out.println("4. See how many items remain ");
-        System.out.println("5. Exit ");
-        choice = choicesScanner.nextInt();
-
-        switch(choice)
+        while(choice != 5)
         {
-            Scanner caseScanner = new Scanner(System.in); 
-            case 1: 
-            System.out.println("Enter To-Do item: ");
-            newItem = caseScanner.nextLine();
-            ToDo.addItem(newItem);
+            Scanner choices = new Scanner(System.in);
+            System.out.println("What would you like to do? ");
+            System.out.println("1. Enter a new To-Do item ");
+            System.out.println("2. Check off To-Do item ");
+            System.out.println("3. See next To-Do item ");
+            System.out.println("4. See how many items remain ");
+            System.out.println("5. Exit ");
+            choice = choices.nextInt();
 
-            //TODO rest of cases
+            switch(choice)
+            {
+                case 1: 
+                System.out.println("Enter To-Do item: ");
+                choices.nextLine();
+                newItem = choices.nextLine();
+                List.push(newItem);
+                break;
 
+                //TODO rest of cases
+
+            }
         }
-
     }
 }

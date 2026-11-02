@@ -53,5 +53,9 @@ public class ToDo
         }
     }
 
-    //TODO peek method, toString method
+    //TODO toString method
+    public void peek()
+    {
+        System.out.println("Next To-Do is" + items[top]);
+    }
 }
