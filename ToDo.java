@@ -57,7 +57,10 @@ public class ToDo
     
     public void peek()
     {
+        if(top > -1){
         System.out.println("Next To-Do is: " + items[top]);
+        }
+        else  System.out.println("To-Do list is empty");
     }
 
     public String toString()

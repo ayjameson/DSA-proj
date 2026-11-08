@@ -51,6 +51,10 @@ public class ToDoDriver
                     System.out.println(List.toString());
                     break;
 
+                    case 6: 
+                    System.out.println("Goodbye!");
+                    break;
+
                 }
             }else System.out.println("Write a correct number");
             
