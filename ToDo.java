@@ -13,7 +13,7 @@ public class ToDo
 
     public boolean push(String newItem)
     {
-        if(itemCount <= items.length)
+        if(itemCount < items.length)
         {
             items[itemCount] = newItem;
             itemCount++;
@@ -22,6 +22,7 @@ public class ToDo
         }
         else
         {
+            System.out.println("To-Do list is full!!");
             return false;
         }
     }
@@ -53,9 +54,23 @@ public class ToDo
         }
     }
 
-    //TODO toString method
+    
     public void peek()
     {
-        System.out.println("Next To-Do is" + items[top]);
+        System.out.println("Next To-Do is: " + items[top]);
+    }
+
+    public String toString()
+    {
+
+        String res = "";
+    
+        for(int i = 0; i < itemCount; i++)
+        {
+            res += (i + 1) + ":" + items[i] + "\n";
+        }
+
+        return res;
+
     }
 }
