@@ -5,10 +5,10 @@ public class ToDoDriver
 {
     public static void main(String[] args)
     {
-        ToDo List = new ToDo();
-        int choice;
-        String newItem;
-        choice = 0;
+        ToDo List = new ToDo();             //creates new todo list object 
+        int choice;                         //used for user input in terminal
+        String newItem;                     //used for push argument
+        choice = 0;                         //initialise before loop
 
         while(choice != 6)
         {
@@ -33,7 +33,7 @@ public class ToDoDriver
                     newItem = choices.nextLine();
                     List.push(newItem);
                     break;
-
+                    
                     case 2: 
                     System.out.println("Check off To-Do item: ");
                     List.pop();           
